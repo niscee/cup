@@ -8,16 +8,17 @@ const introMainContainer = {
 };
 
 // looping image list.
-const imgIterate = (list) => {
+const imgIterate = (list, key) => {
   return (
     <img
       src={list}
+      key={key}
       alt="team"
       style={{
         width: "50px",
         height: "50px",
         borderRadius: "50%",
-        marginLeft: "20px",
+        marginLeft: "10px",
       }}
     />
   );
@@ -29,18 +30,16 @@ const Intro = () => {
       <div className="intro-inner">
         <div
           style={{
-            border: "2px solid red",
+            border: "2px ridge red",
             padding: "10px 0px",
             backdropFilter: "blur(5px)",
           }}
         >
           <p className="intro-text">Cartel Cup</p>
           <p className="intro-text">3.0</p>
-          <marquee scrollamount="10">
-            {imgList.map((list) => {
-              return imgIterate(list);
-            })}
-          </marquee>
+          {imgList.map((list, key) => {
+            return imgIterate(list, key);
+          })}
         </div>
       </div>
     </div>
