@@ -27,9 +27,7 @@ const imgIterate = (list, key) => {
 const Intro = () => {
   return (
     <div style={introMainContainer}>
-      <marquee>
-        <p>Witness The Greatest League In The World.</p>{" "}
-      </marquee>
+      <p>Witness The Greatest League In The World.</p>{" "}
       <div className="intro-inner">
         <div
           style={{
