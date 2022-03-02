@@ -3,7 +3,12 @@
   font-weight: bold;
   font-size: 3.5rem;
   padding: 15px;
-  animation: fadeIn 10s;
+  animation: fadeIn 5s;
+}
+
+p {
+  color: yellow;
+  font-weight: bold;
 }
 
 .intro-inner {
@@ -13,6 +18,10 @@
   text-align: center;
   line-height: 0.5;
   padding-top: 20%;
+}
+
+.intro-logo {
+  animation: fadeIn 15s;
 }
 
 @keyframes fadeIn {

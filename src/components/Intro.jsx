@@ -27,6 +27,9 @@ const imgIterate = (list, key) => {
 const Intro = () => {
   return (
     <div style={introMainContainer}>
+      <marquee>
+        <p>Witness The Greatest League In The World.</p>{" "}
+      </marquee>
       <div className="intro-inner">
         <div
           style={{
@@ -37,9 +40,11 @@ const Intro = () => {
         >
           <p className="intro-text">Cartel Cup</p>
           <p className="intro-text">3.0</p>
-          {imgList.map((list, key) => {
-            return imgIterate(list, key);
-          })}
+          <div className="intro-logo">
+            {imgList.map((list, key) => {
+              return imgIterate(list, key);
+            })}
+          </div>
         </div>
       </div>
     </div>
