@@ -7,23 +7,4 @@
   font-family: "Syne Mono", monospace;
 }
 
-#intro-text {
-  font-weight: bold;
-  font-size: 1.8rem;
-  color: white;
-  margin-top: 30%;
-  word-spacing: 5px;
-  animation-name: example;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
 
-/* The animation code */
-@keyframes example {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(10%);
-  }
-}

@@ -1,0 +1,25 @@
+#intro-text {
+  color: white;
+  font-weight: bold;
+  font-size: 3.5rem;
+  padding: 15px;
+  animation: fadeIn 6s;
+}
+
+.intro-inner {
+  height: 100%;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  line-height: 0.5;
+  padding-top: 50%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
